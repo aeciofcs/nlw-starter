@@ -1,0 +1,23 @@
+{
+  "name": "nlw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeciofcs/nlw-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aeciofcs/nlw-starter/issues"
+  },
+  "homepage": "https://github.com/aeciofcs/nlw-starter#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
