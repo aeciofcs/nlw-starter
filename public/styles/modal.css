@@ -91,3 +91,16 @@
 #modal form button:hover {
     background-color: #2fb85e;
 }
+
+/* Abaixo é o estilo para o modal do Point Created */
+
+#modal.point .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal.point h1 {
+    color: white;
+    margin-top: 32px;
+}
