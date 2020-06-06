@@ -87,8 +87,14 @@ server.post("/savepoint", (req, res) => {
 
 server.get("/search", (req, res) => {
 
+    // Se a pesquisa vier com o campo cidade em branco, retornará 0
+    const search = req.query.search
+    if (search === ""){
+        return res.render("search-results.html", { total: 0 })
+    }
+
     //Pegar os dados do banco de dados
-    db.all(`SELECT * FROM places`, function (err, rows) {
+    db.all(`SELECT * FROM places WHERE city like '%${search}%'`, function (err, rows) {
         if (err) {
             console.log(err)
             return res.send("Erro na pesquisa! ")
